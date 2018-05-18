@@ -6,7 +6,7 @@ namespace EF_Library
     {
         static void Main(string[] args)
         {
-            AddBook(new Book { Title = "1984", Author = "George Orwell", Topic = "novel-dystopia" });
+            AddBook(new Book { Title = "1984", Author = "George Orwell", Topic = "novel-dystopia", Price = 2.0 });
             AddClient(new Client { FullName = "Vasya Petrov", Phone = "0972153457", Passport = "AO012584", RegistrationDate = DateTime.Now });
             AddClient(new Client { FullName = "Kolya Savushkin", Phone = "0972374581", Passport = "AO231854", RegistrationDate = DateTime.Now });
             AddOrder(new Order { Id_Book = 1, Id_Client = 2, OrderDate = DateTime.Now, ReturnDate = DateTime.Now.AddDays(7) });
