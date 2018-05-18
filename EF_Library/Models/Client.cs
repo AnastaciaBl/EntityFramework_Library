@@ -11,15 +11,6 @@ namespace EF_Library
         public string FullName { get; set; }
         public string Phone { get; set; }
         public string Passport { get; set; }
-        public DateTime registrationDate { get; set; }
-        
-        public Client() { }
-        public Client(string fullName, string phone, string passport)
-        {
-            FullName = fullName;
-            Phone = phone;
-            Passport = passport;
-            registrationDate = DateTime.Now;
-        }
+        public DateTime RegistrationDate { get; set; }
     }
 }

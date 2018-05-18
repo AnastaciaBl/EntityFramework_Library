@@ -12,14 +12,5 @@ namespace EF_Library
         public int Id_Client { get; set; }
         public DateTime OrderDate { get; set; }
         public DateTime ReturnDate { get; set; }
-
-        public Order() { }
-        public Order(int book_id, int client_id, int amountOfUsingDays)
-        {
-            Id_Book = book_id;
-            Id_Client = client_id;
-            OrderDate = DateTime.Now;
-            ReturnDate = OrderDate.AddDays(amountOfUsingDays);
-        }
     }
 }
